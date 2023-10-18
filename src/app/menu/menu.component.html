@@ -1,84 +1,13 @@
+<h1>This store is {{storeId}}</h1>
 <ul>
-    <li *ngFor="let i of fooditems">
-        <div class="sc-1s0saks-17 bGrnCu">
-            <div class="sc-1s0saks-7 bckjvf">
-                <div height="13rem" width="13rem" class="sc-s1isp7-1 kmRBaC sc-1s0saks-16 dfjlEy">
-                    <div src="" class="sc-s1isp7-3 cVOEqG"></div>
-                        <img alt="2 Med Fries." src="{{i.imageUrl}}">
+    <li *ngFor="let i of fooditemsforstore">
+        <a>
+            <img src = "{{i.imageUrl}}" alt = {{i.name}}>
+            <div class="content">
+                <div class="name" >
+                    <p style="color: black; font: arial">{{i.name}}</p>
                 </div>
-                <div type="veg" class="sc-1tx3445-0 kcsImg sc-1s0saks-0 jcidl"><i class="sc-rbbb40-1 iFnyeo" size="13"
-                        color="#3AB757"><svg xmlns="http://www.w3.org/2000/svg" fill="#3AB757" width="13" height="13"
-                            viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                            class="sc-rbbb40-0 khXxzt">
-                            <g clip-path="url(#clip0_835:69868)">
-                                <path
-                                    d="M15 10C15 12.74 12.76 15 10 15C7.24 15 5 12.74 5 10C5 7.26 7.26 5 10 5C12.74 5 15 7.24 15 10ZM20 4V16C20 18.26 18.26 20 16 20H4C1.76 20 0 18.26 0 16V4C0 1.74 1.76 0 4 0H16C18.26 0 20 1.74 20 4V4ZM18.34 4C18.34 2.74 17.26 1.66 16 1.66H4C2.76 1.66 1.66 2.74 1.66 4V16C1.66 17.26 2.76 18.34 4 18.34H16C17.26 18.34 18.34 17.26 18.34 16V4V4Z">
-                                </path>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_835:69868">
-                                    <rect width="20" height="20"></rect>
-                                </clipPath>
-                            </defs>
-                        </svg></i></div>
             </div>
-            <div class="sc-1s0saks-10 cYSFTJ">
-                <div class="sc-1s0saks-11 cYGeYt">
-                    <div class="sc-1s0saks-13 kQHKsO">
-                        <h4 class="sc-1s0saks-15 iSmBPS">2 Med Fries.</h4>
-                        <div class="sc-z30xqq-2 dnSIjs sc-1s0saks-9 kNjbyv">
-                            <div class="sc-z30xqq-3 bewuUV"><i class="sc-rbbb40-1 iFnyeo sc-z30xqq-0 fehnhH" size="14"
-                                    color="#F3C117"><svg xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14"
-                                        height="14" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                        role="img" class="sc-rbbb40-0 kyPUnV">
-                                        <title>star-fill</title>
-                                        <path
-                                            d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
-                                        </path>
-                                    </svg></i><i class="sc-rbbb40-1 iFnyeo sc-z30xqq-0 fehnhH" size="14" color="#F3C117"><svg
-                                        xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14"
-                                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                        class="sc-rbbb40-0 kyPUnV">
-                                        <title>star-fill</title>
-                                        <path
-                                            d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
-                                        </path>
-                                    </svg></i><i class="sc-rbbb40-1 iFnyeo sc-z30xqq-0 fehnhH" size="14" color="#F3C117"><svg
-                                        xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14"
-                                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                        class="sc-rbbb40-0 kyPUnV">
-                                        <title>star-fill</title>
-                                        <path
-                                            d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
-                                        </path>
-                                    </svg></i><i class="sc-rbbb40-1 iFnyeo sc-z30xqq-0 fehnhH" size="14" color="#F3C117"><svg
-                                        xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14"
-                                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                        class="sc-rbbb40-0 kyPUnV">
-                                        <title>star-fill</title>
-                                        <path
-                                            d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z">
-                                        </path>
-                                    </svg></i><i class="sc-rbbb40-1 iFnyeo sc-z30xqq-1 heKqFw" size="14" color="#F3C117"><svg
-                                        xmlns="http://www.w3.org/2000/svg" fill="#F3C117" width="14" height="14"
-                                        viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                        class="sc-rbbb40-0 kyPUnV">
-                                        <linearGradient id="clntebx9h00303n6y60u2pb9c" x1="0" x2="100%" y1="0" y2="0">
-                                            <stop offset="0" stop-color="#F3C117"></stop>
-                                            <stop offset="30%" stop-color="#F3C117"></stop>
-                                            <stop offset="31%" stop-color="#E8E8E8"></stop>
-                                            <stop offset="1" stop-color="#E8E8E8"></stop>
-                                        </linearGradient>
-                                        <path
-                                            d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"
-                                            fill="url(#clntebx9h00303n6y60u2pb9c)"></path>
-                                    </svg></i></div><span class="sc-z30xqq-4 hTgtKb">166 votes</span>
-                        </div>
-                        <div class="sc-17hyc2s-3 jOoliK sc-1s0saks-8 gYkxGN"><span class="sc-17hyc2s-1 cCiQWA">₹230</span></div>
-                    </div>
-                </div>
-                <p class="sc-1s0saks-12 hcROsL">The perfect crispy partner.</p>
-            </div>
-        </div>
+        </a>
     </li>
 </ul>
