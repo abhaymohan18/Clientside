@@ -1,8 +1,8 @@
-export class FoodItems{
-    id!:number;
-    name!:string;
-    description!:string;
-    price!:number;
-    rating!:number
-    imageUrl!:string;
+export interface FoodItems{
+    id:number;
+    name:string;
+    description:string;
+    price:number;
+    rating:number;
+    imagurl:string;
 }
